@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document"
 
-import data from "../../data.json"
-const { name } = data
+import { META_DATA } from "@utils/constants"
+const { author, url, title, description, image_preview, copy_right } = META_DATA
 
 export default function Document() {
   return (
@@ -13,33 +13,24 @@ export default function Document() {
         <meta name="description" content={`Portfolio of ${name}`} />
         <meta
           name="keywords"
-          content={"Portfolio " + name + " skills projects experience resume"}
+          content={"Portfolio " + author + " skills projects experience resume"}
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="10 days" />
-        <meta name="author" content="Dung Le" />
-        <meta name="copyright" content="All rights reserved,2023. Dung Le" />
+        <meta name="author" content={author} />
+        <meta name="copyright" content={copy_right} />
         <meta httpEquiv="content-language" content="en" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://my-portfolio-dungle2912.vercel.app/" />
-        <meta property="og:title" content="Dung Le | Software Developer" />
-        <meta
-          property="og:description"
-          content="Dung Le is a Software Developer from Ho Chi Minh City, Vietnam."
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/dhqgdzbi0/image/upload/v1687746403/z3553283759181_8a785e5ee57251f870095cc9fa7c3bec_xeir1y.jpg"
-        />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image_preview} />
         {/* Use Billboard to get an OG Image */}
-        <meta
-          property="twitter:image"
-          content="https://res.cloudinary.com/dhqgdzbi0/image/upload/v1687746403/z3553283759181_8a785e5ee57251f870095cc9fa7c3bec_xeir1y.jpg"
-        />
+        <meta property="twitter:image" content={image_preview} />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
