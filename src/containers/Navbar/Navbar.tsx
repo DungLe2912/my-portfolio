@@ -5,9 +5,9 @@ import Image from "next/image"
 import { useRouter } from "next/router"
 import { Menu } from "react-feather"
 
-import { NAV_LINKS } from "@utils/constants"
-// import { PersonalDetails } from "@utils/types"
-// import { PersonalDetailsContext } from "@utils/contexts"
+import { NAV_LINKS } from "utils/constants"
+// import { PersonalDetails } from "utils/types"
+// import { PersonalDetailsContext } from "utils/contexts"
 
 import { INavbarItemProps } from "./types"
 

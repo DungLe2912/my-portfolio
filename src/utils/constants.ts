@@ -37,7 +37,53 @@ const SOCIAL_CONTACT = {
     link: "https://www.facebook.com/dungle2912/",
     alt: "Facebook info",
   },
-  instagram: {},
+  instagram: {
+    url: "/images/vectors/instagram.svg",
+    link: "",
+    alt: "Instagram info",
+  },
+  email: {
+    url: "/images/vectors/email.svg",
+    link: "mailto:qdung.le3912@gmail.com",
+    alt: "Email info",
+  },
+  linkedin: {
+    url: "/images/vectors/linkedin.svg",
+    link: "https://www.linkedin.com/in/le-dung-a19547136/",
+    alt: "LinkedIn info",
+  },
+  github: {
+    url: "/images/vectors/github.svg",
+    link: "https://github.com/DungLe2912",
+    alt: "Github info",
+  },
 }
 
-export { NAV_LINKS, META_DATA }
+const PERSONAL_DETAIL = {
+  fullName: "Dung Le",
+  about:
+    "A Full-stack developer, with more than 3 years of experience working with ReactJS, NextJS, NestJS.",
+  resume: "",
+  profile_img:
+    "https://res.cloudinary.com/dhqgdzbi0/image/upload/v1689231866/vecteezy_happy-3d-student-boy-with-books-on-white-background-png_22484651_546_pveuv0.png",
+}
+
+const SKILLS = [
+  { name: "HTML", image_url: "/images/skills/html.svg" },
+  { name: "CSS", image_url: "/images/skills/css.svg" },
+  { name: "JS", image_url: "/images/skills/js.svg" },
+  { name: "TS", image_url: "/images/skills/ts.svg" },
+  { name: "REACT JS", image_url: "/images/skills/react.svg" },
+  { name: "NEXT JS", image_url: "/images/skills/next.svg" },
+  { name: "NEST JS", image_url: "/images/skills/nest.svg" },
+  { name: "EXPRESS JS", image_url: "/images/skills/express.svg" },
+  { name: "GIT", image_url: "/images/skills/git.svg" },
+  { name: "FIGMA", image_url: "/images/skills/figma.svg" },
+]
+
+const WORKS = {
+  company: "Golden Owl",
+  role: "Software developer",
+  logo: "/images/works/go.svg",
+}
+export { NAV_LINKS, META_DATA, SOCIAL_CONTACT, PERSONAL_DETAIL, SKILLS, WORKS }

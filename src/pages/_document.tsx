@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document"
 
-import { META_DATA } from "@utils/constants"
+import { META_DATA } from "utils/constants"
 const { author, url, title, description, image_preview, copy_right } = META_DATA
 
 export default function Document() {
@@ -10,7 +10,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         {/* PWA primary color */}
         <meta name="theme-color" content="black" />
-        <meta name="description" content={`Portfolio of ${name}`} />
+        <meta name="description" content={`Portfolio of ${author}`} />
         <meta
           name="keywords"
           content={"Portfolio " + author + " skills projects experience resume"}

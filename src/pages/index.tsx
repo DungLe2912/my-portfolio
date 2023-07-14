@@ -1,12 +1,14 @@
 // import dynamic from "next/dynamic"
-import { NavBar } from "src/components"
+import { NavBar, SocialBar, Home } from "containers"
 
-const Home = (): JSX.Element => {
+const HomePage = (): JSX.Element => {
   return (
     <>
       <NavBar />
+      <SocialBar />
+      <Home />
     </>
   )
 }
 
-export default Home
+export default HomePage
