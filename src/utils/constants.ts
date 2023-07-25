@@ -86,4 +86,13 @@ const WORKS = {
   role: "Software developer",
   logo: "/images/works/go.svg",
 }
-export { NAV_LINKS, META_DATA, SOCIAL_CONTACT, PERSONAL_DETAIL, SKILLS, WORKS }
+
+const PROJECTS = [
+  {
+    name: "Pace",
+    img: "https://res.cloudinary.com/dhqgdzbi0/image/upload/v1690275023/Screen_Shot_2023-07-25_at_15.49.33_djhh7w.png",
+    slug: "pace",
+  },
+]
+
+export { NAV_LINKS, META_DATA, SOCIAL_CONTACT, PERSONAL_DETAIL, SKILLS, WORKS, PROJECTS }

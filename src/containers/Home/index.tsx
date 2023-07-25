@@ -1,6 +1,7 @@
 import Landing from "./landing"
 import Skills from "./skills"
 import Works from "./works"
+import Projects from "./project"
 
 const Home = (): JSX.Element => {
   return (
@@ -10,6 +11,7 @@ const Home = (): JSX.Element => {
           <Landing />
           <Skills />
           <Works />
+          <Projects />
         </div>
       </div>
     </>
