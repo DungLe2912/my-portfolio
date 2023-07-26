@@ -1,5 +1,6 @@
 // import dynamic from "next/dynamic"
 import { NavBar, SocialBar, Home } from "containers"
+import { Footer } from "components"
 
 const HomePage = (): JSX.Element => {
   return (
@@ -7,6 +8,7 @@ const HomePage = (): JSX.Element => {
       <NavBar />
       <SocialBar />
       <Home />
+      <Footer />
     </>
   )
 }
