@@ -1,13 +1,29 @@
+import { useEffect, useState } from "react"
 import Head from "next/head"
+import { AnimatePresence, motion } from "framer-motion"
 
 import type { AppProps } from "next/app"
 import { META_DATA } from "utils/constants"
 
 import "../styles/globals.css"
+import { Loader } from "components"
 
 const { author, url, title, description, image_preview, copy_right } = META_DATA
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setLoading(false)
+  }, [])
+
+  const spring = {
+    type: "spring",
+    damping: 20,
+    stiffness: 100,
+    when: "afterChildren",
+  }
+
   return (
     <div>
       <Head>
@@ -45,7 +61,25 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Component {...pageProps} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <AnimatePresence>
+          <div className="page-transition-wrapper overflow-x-hidden min-h-screen">
+            <motion.div
+              transition={spring}
+              key={router.pathname}
+              initial={{ x: 300, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -300, opacity: 0 }}
+              id="page-transition-container"
+            >
+              {/* <CustomCursor /> */}
+              <Component {...pageProps} key={router.pathname} />
+            </motion.div>
+          </div>
+        </AnimatePresence>
+      )}
     </div>
   )
 }

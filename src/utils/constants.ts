@@ -4,10 +4,6 @@ const NAV_LINKS = [
     href: "/",
   },
   {
-    title: "Explore",
-    href: "/#skills",
-  },
-  {
     title: "Work",
     href: "/work",
   },
