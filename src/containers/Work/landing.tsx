@@ -37,7 +37,7 @@ export default function Landing(): JSX.Element {
               </h1>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-5 lg:col-span-6 grid grid-cols-3 gap-4 lg:gap-14 my-10 sm:mt-0 items-center">
+          <div className="items-center col-span-12 md:col-span-5 lg:col-span-6 grid grid-cols-3 gap-4 lg:gap-14 my-10 sm:mt-0">
             {WORKS.map(
               (name: ICompany, index): JSX.Element => (
                 <Image
@@ -46,7 +46,7 @@ export default function Landing(): JSX.Element {
                   key={index}
                   width={100}
                   height={100}
-                  className="w-24 sm:w-36"
+                  className="w-60 sm:w-64"
                 />
               )
             )}

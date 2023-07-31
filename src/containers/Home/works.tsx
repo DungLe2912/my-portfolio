@@ -18,9 +18,9 @@ const Works = (): JSX.Element => {
           className="absolute -right-16 md:-right-64 top-52 md:top-0 lg:bottom-36 w-1/3 2xl:w-1/3 pointer-events-none animate-spin"
         />
         <div className="ml-4 sm:mx-12 md:mx-16 grid grid-cols-12 gap-4 h-auto place-items-center items-center">
-          <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-center sm:items-center">
+          <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-center items-center">
             {/* Hero Header */}
-            <div className="items-center w-4/5 sm:w-3/4 relative">
+            <div className="items-center w-3/4 relative">
               <Image
                 src="/images/vectors/boxes.svg"
                 alt="Box Vector"
@@ -54,7 +54,7 @@ const Works = (): JSX.Element => {
               alt="Works at"
               width={400}
               height={400}
-              className="w-full p-14 sm:p-24 md:p-4"
+              className="w-64 sm:p-24 md:p-4"
             />
           </div>
         </div>
