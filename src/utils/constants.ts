@@ -77,11 +77,13 @@ const SKILLS = [
   { name: "FIGMA", image_url: "/images/skills/figma.svg" },
 ]
 
-const WORKS = {
-  company: "Golden Owl",
-  role: "Software developer",
-  logo: "/images/works/go.svg",
-}
+const WORKS = [
+  {
+    name: "Golden Owl",
+    role: "Software developer",
+    logo_url: "/images/works/go.svg",
+  },
+]
 
 const PROJECTS = [
   {

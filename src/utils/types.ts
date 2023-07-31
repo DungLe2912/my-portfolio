@@ -11,3 +11,16 @@ export interface IRepoData {
   forks: number
   updated_at: Date | string
 }
+
+export interface ICompany {
+  name: string
+  logo_url: string
+}
+
+export interface IWork {
+  company: string
+  position: string
+  startDate: string
+  endDate?: string
+  responsibilities: string[]
+}

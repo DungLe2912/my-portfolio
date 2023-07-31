@@ -14,7 +14,9 @@ export default function App({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
   }, [])
 
   const spring = {
